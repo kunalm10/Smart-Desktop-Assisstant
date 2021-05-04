@@ -117,7 +117,7 @@ if __name__ == "__main__":
                 print(e)
                 speak("Sorry. I am not able to send this email")
 
-        elif 'stop' or 'quit' in query:
+        elif 'stop' or 'quit' or 'exit' in query:
             print(f'exiting smart assisstant')
             speak('Thank you for giving me a chance to help you. Have a Good Day!')
             break
