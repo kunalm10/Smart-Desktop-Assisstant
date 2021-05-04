@@ -93,12 +93,12 @@ if __name__ == "__main__":
             webbrowser.open("stackoverflow.com")
 
         elif 'play music' in query:
-            music_dir = 'D:\\Non Critical\\songs\\Favorite Songs2'
+            music_dir = 'D:\\songs\\Favorite Songs'
             songs = os.listdir(music_dir)
             print(songs)
             os.startfile(os.path.join(music_dir, songs[0]))
 
-        elif 'the time' in query:
+        elif 'time' in query:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")
             speak(f"Sir, the time is {strTime}")
 
@@ -117,7 +117,7 @@ if __name__ == "__main__":
                 print(e)
                 speak("Sorry. I am not able to send this email")
 
-        elif 'stop' in query:
+        elif 'stop' or 'quit' in query:
             print(f'exiting smart assisstant')
             speak('Thank you for giving me a chance to help you. Have a Good Day!')
             break
